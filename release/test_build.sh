@@ -99,7 +99,7 @@ cd $GMT_GLOBAL/test/ocs_core_fwk/bin/
 for i in *
 do
   # Skip some tests. See GMTO/gmt_issues#244, GMTO/gmt_issues#243, GMTO/gmt_issues#242, GMTO/gmt_issues#241
-  if [ "$i" != "core_lib_pkg_functional_03_periodictask_test" ] && [ "$i" != "core_lib_pkg_functional_18_serverproxy_test" ]; then
+  if [ "$i" != "core_lib_pkg_functional_03_periodictask_test" ]; then
     LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$GMT_GLOBAL/test/ocs_core_fwk/lib/so ./$i
   fi
 done
